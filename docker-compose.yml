@@ -1,9 +1,9 @@
 version: '2'
 services:
   db:
-    image: nginx:latest
+    image: php:7
     volumes:
-      - /Users/wj/index.html:/usr/share/nginx/html/index.html
+      - /Users/wj/hello.php
     restart: always
     ports:
       - "50000:80"
